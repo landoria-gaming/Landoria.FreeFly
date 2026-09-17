@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>10</LangVersion>
+    <IsPluginProject
+        Condition="'$(MSBuildProjectName)' != 'Landoria.SharedLib'
+          and '$(MSBuildProjectName)' != 'DllMetadataVersion'">true</IsPluginProject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(IsPluginProject)' == 'true'">
+    <LandoriaSharedLibAssembly>$(MSBuildThisFileDirectory)Landoria.SharedLib\bin\$(Configuration)\Landoria.SharedLib.dll</LandoriaSharedLibAssembly>
+    <ILRepackTargetsFile>$(MSBuildThisFileDirectory)Landoria.SharedLib\ILRepack.targets</ILRepackTargetsFile>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(IsPluginProject)' == 'true'">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Landoria.SharedLib\Landoria.SharedLib.csproj">
+      <Private>false</Private>
+    </ProjectReference>
+    <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.44">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(MSBuildProjectName)' != 'DllMetadataVersion'">
+    <Reference Include="netstandard">
+      <HintPath>$(ValheimGamePath)\valheim_Data\Managed\netstandard.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildThisFileDirectory)lib\HarmonyValidator.targets"
+          Condition="'$(IsPluginProject)' == 'true'" />
+</Project>
