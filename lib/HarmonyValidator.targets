@@ -6,7 +6,7 @@
              AssemblyFile="$(HarmonyValidatorAssembly)" />
   <Target Name="ValidateHarmonyTargets"
           AfterTargets="CoreCompile"
-          BeforeTargets="CopyFilesToOutputDirectory;MergeLandoriaSharedLib"
+          BeforeTargets="CopyFilesToOutputDirectory"
           Condition="'$(DesignTimeBuild)' != 'true'">
     <Error Condition="!Exists('$(HarmonyValidatorAssembly)')"
            Text="HarmonyValidator assembly not found: $(HarmonyValidatorAssembly)." />

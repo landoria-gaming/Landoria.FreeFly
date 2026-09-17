@@ -2,9 +2,9 @@
 
 Use Windows, Visual Studio MSBuild with .NET Framework 4.8 targeting tools, and a local Valheim installation with BepInEx 5.
 
-The included `Landoria.SharedLib` sources are embedded into the plugin by ILRepack. Their MIT license is included in that directory.
+FreeFly uses BepInEx and Harmony directly. No shared Landoria library or assembly merging is required.
 
-Build HarmonyValidator from the `HarmonyValidator/HarmonyValidator` project in the Landoria workspace and supply its DLL using `HarmonyValidatorAssembly`. The build validates Harmony targets before merging the shared library. Game, BepInEx, and validator binaries are not distributed in this repository.
+Build HarmonyValidator from the `HarmonyValidator/HarmonyValidator` project in the Landoria workspace and supply its DLL using `HarmonyValidatorAssembly`. The build validates Harmony targets before copying the plugin to its output directory. Game, BepInEx, and validator binaries are not distributed in this repository.
 
 Run from a Visual Studio developer shell:
 
