@@ -1,5 +1,8 @@
 # FreeFly
 
+Snapshot builds use LandoriaModActions@v4.3 and the shared private references.
+Requires MOD_REFERENCES_TOKEN. Runs on main only when both versions match X.Y.Z-snapshot.
+
 Gives players a free camera for exploring, taking screenshots, and filming around their character. It works on multiplayer servers without requiring admin permissions.
 
 ## Video demo
