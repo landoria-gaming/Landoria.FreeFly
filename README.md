@@ -34,4 +34,3 @@ This is a client-only mod and does not need to be installed on the server.
 ## Contact
 
 Report bugs through [GitHub Issues](https://github.com/landoria-gaming/Landoria.FreeFly/issues).
-For questions, feedback, and other discussions, use [GitHub Discussions](https://github.com/landoria-gaming/Landoria.FreeFly/discussions).
