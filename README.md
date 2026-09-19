@@ -1,16 +1,10 @@
 # FreeFly
 
-Requires MOD_REFERENCES_TOKEN. All five versions must match; only manifest and informational version use -snapshot.
-
 Gives players a free camera for exploring, taking screenshots, and filming around their character. It works on multiplayer servers without requiring admin permissions.
 
 ## Video demo
 
 [Watch FreeFly in action on YouTube](https://youtu.be/smoOkcAPKr0).
-
-## Valheim compatibility
-
-Current release: 1.0.x
 
 ## Features
 
