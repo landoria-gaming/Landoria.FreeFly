@@ -1,10 +1,10 @@
 # FreeFly
 
-Gives players a free camera for exploring, taking screenshots, and filming around their character. It works on multiplayer servers without requiring admin permissions.
+Gives you a free camera for exploring, taking screenshots, and filming around their character. It works on multiplayer servers without requiring admin permissions.
 
 ## Video demo
 
-[Watch FreeFly in action on YouTube](https://youtu.be/smoOkcAPKr0).
+[Watch FreeFly in action on YouTube](https://youtu.be/di3SqL7EBrc).
 
 ## Features
 

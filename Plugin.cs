@@ -10,7 +10,7 @@ namespace Landoria.FreeFly
     {
         internal const string PluginGuid = "Landoria.FreeFly";
         internal const string PluginName = "Landoria.FreeFly";
-        internal const string PluginVersion = "1.0.0";
+        internal const string PluginVersion = "1.0.1";
         private Harmony _harmony;
 
         // Loads settings, commands, and patches.
