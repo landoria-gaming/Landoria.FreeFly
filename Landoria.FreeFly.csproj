@@ -30,12 +30,12 @@
     <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(ValheimGamePath)\valheim_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FreeFlyCommands.cs" />
-    <Compile Include="FreeFlyController.cs" />
-    <Compile Include="FreeFlyInterfaceController.cs" />
-    <Compile Include="FreeFlyPatches.cs" /><Compile Include="FreeFlyPlugin.cs" />
-    <Compile Include="FreeFlyPreference.cs" /><Compile Include="FreeFlyShortcut.cs" />
-    <Compile Include="FreeFlyTransitionController.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="InterfaceController.cs" />
+    <Compile Include="Patches.cs" /><Compile Include="Plugin.cs" />
+    <Compile Include="Preference.cs" /><Compile Include="Shortcut.cs" />
+    <Compile Include="TransitionController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -43,5 +43,6 @@
     <Content Include="README.md" />
     <Content Include="CHANGELOG.md" />
   </ItemGroup>
+  <Import Project="..\Landoria.CodeSnippets\Landoria.CodeSnippets.targets" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

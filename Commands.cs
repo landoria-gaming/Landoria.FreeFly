@@ -5,7 +5,7 @@ using System.Globalization;
 namespace Landoria.FreeFly
 {
     // Registers and handles free-fly console commands.
-    internal static class FreeFlyCommands
+    internal static class Commands
     {
         // Registers the smoothing command.
         internal static void Register()

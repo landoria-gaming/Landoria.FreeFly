@@ -1,7 +1,7 @@
 namespace Landoria.FreeFly
 {
     // Hides the interface during free fly and restores its previous state.
-    internal static class FreeFlyInterfaceController
+    internal static class InterfaceController
     {
         private static bool wasFreeFlyActive;
         private static bool previousHiddenState;

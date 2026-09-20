@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Landoria.FreeFly
 {
     // Smooths camera movement when entering and leaving free fly.
-    internal static class FreeFlyTransitionController
+    internal static class TransitionController
     {
         private const float EnterDuration = 1f; // Seconds.
         private const float ExitDuration = 3f; // Seconds.
@@ -83,7 +83,7 @@ namespace Landoria.FreeFly
             exiting = elapsed < ExitDuration;
             if (!exiting)
             {
-                FreeFlyController.CompleteDisable();
+                Controller.CompleteDisable();
             }
         }
 

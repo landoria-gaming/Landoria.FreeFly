@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Landoria.FreeFly
 {
     // Controls free-fly movement and placement.
-    internal static class FreeFlyController
+    internal static class Controller
     {
         internal const float DefaultSmoothness = 0.25f;
         internal const float MaximumDistance = 50f;
@@ -84,7 +84,7 @@ namespace Landoria.FreeFly
 
             if (GameCamera.InFreeFly())
             {
-                FreeFlyTransitionController.StartExiting(GameCamera.instance);
+                TransitionController.StartExiting(GameCamera.instance);
             }
             else
             {
@@ -178,7 +178,7 @@ namespace Landoria.FreeFly
         {
             if (GameCamera.instance && GameCamera.InFreeFly())
             {
-                FreeFlyTransitionController.StartExiting(GameCamera.instance);
+                TransitionController.StartExiting(GameCamera.instance);
             }
         }
 

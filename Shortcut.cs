@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Landoria.FreeFly
 {
     // Toggles the free camera with the configured shortcut.
-    internal static class FreeFlyShortcut
+    internal static class Shortcut
     {
         private static bool suppressEscapeMenu;
 
@@ -13,7 +13,7 @@ namespace Landoria.FreeFly
         {
             if (GameCamera.InFreeFly() && ZInput.GetKeyDown(KeyCode.Escape))
             {
-                FreeFlyController.Disable();
+                Controller.Disable();
                 suppressEscapeMenu = true;
                 if (Menu.IsActive())
                 {
@@ -27,7 +27,7 @@ namespace Landoria.FreeFly
                 return;
             }
 
-            FreeFlyController.Toggle();
+            Controller.Toggle();
         }
 
         // Closes the menu opened by a consumed Escape key.
@@ -60,7 +60,7 @@ namespace Landoria.FreeFly
         // Checks the configured key and its modifiers.
         private static bool IsToggleShortcutDown()
         {
-            KeyboardShortcut shortcut = FreeFlyPreference.ToggleShortcut;
+            KeyboardShortcut shortcut = Preference.ToggleShortcut;
             if (shortcut.MainKey == KeyCode.None ||
                 !ZInput.GetKeyDown(shortcut.MainKey))
             {
