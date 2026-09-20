@@ -18,10 +18,7 @@ namespace Landoria.FreeFly
         {
             Logger.LogInfo($"AssemblyVersion: {GetType().Assembly.GetName().Version}.");
             _harmony = new Harmony(PluginGuid);
-            _harmony.CreateClassProcessor(typeof(InitializationPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(EscapeMenuPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(MouseWheelPatch)).Patch();
-            _harmony.CreateClassProcessor(typeof(MovementPatch)).Patch();
+            _harmony.PatchAll();
             Preference.Initialize(Config);
             ConfigWatcher.Initialize(
                 Config,
