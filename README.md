@@ -5,7 +5,7 @@ Gives you a free camera for exploring, taking screenshots, and filming around th
 ## Video demo
 
 <p align="left">
-  <a href="https://youtu.be/di3SqL7EBrc"><img src="https://raw.githubusercontent.com/landoria-gaming/Landoria.FreeFly/main/assets/free-fly.jpg" alt="FreeFly video demo" width="300"></a>
+  <a href="https://youtu.be/di3SqL7EBrc"><img src="https://raw.githubusercontent.com/landoria-gaming/Landoria.FreeFly/main/assets/free-fly.png" alt="FreeFly video demo" width="300"></a>
 </p>
 
 ## Features
